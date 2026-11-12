@@ -9,8 +9,7 @@ export type ProjectCategoryId =
   | 'wardrobes'
   | 'storage-cabinets'
   | 'commercial-stores'
-  | 'public-projects'
-  | 'restoration';
+  | 'public-projects';
 
 export interface ProjectSpecification {
   label: BilingualText;
@@ -47,7 +46,6 @@ export const PROJECT_CATEGORIES: Array<{ id: ProjectCategoryId; label: Bilingual
   { id: 'storage-cabinets', label: { ar: 'الخزائن والتخزين', en: 'Storage & Cabinets' } },
   { id: 'commercial-stores', label: { ar: 'المحلات التجارية', en: 'Commercial Stores' } },
   { id: 'public-projects', label: { ar: 'المشاريع العامة', en: 'Public Projects' } },
-  { id: 'restoration', label: { ar: 'أعمال الترميم', en: 'Restoration Works' } },
 ];
 
 /**
@@ -432,50 +430,6 @@ export const PROJECTS_DATA: ProjectItem[] = [
       {
         label: { ar: 'نطاق العمل', en: 'Scope of Work' },
         value: { ar: 'تنفيذ ديكورات مشاريع عامة ومباني', en: 'Public & Corporate Project Execution' },
-      },
-      {
-        label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
-        value: { ar: 'ضمان 15 سنة', en: '15-Year Warranty' },
-      },
-    ],
-  },
-  {
-    id: 'complete-structural-interior-restoration',
-    category: 'restoration',
-    categoryLabel: { ar: 'أعمال الترميم', en: 'Restoration Works' },
-    title: {
-      ar: 'إعادة تأهيل وترميم شامل للمساحات الداخلية والأسقف',
-      en: 'Comprehensive Interior Rehabilitation & Ceiling Restoration',
-    },
-    subtitle: {
-      ar: 'تحويل المباني القديمة إلى مساحات حديثة متكاملة التشطيب',
-      en: 'Transforming aging properties into fully modernized luxury interiors',
-    },
-    coverImage: IMAGES.architecturalRenovation,
-    gallery: [IMAGES.architecturalRenovation],
-    location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
-    featured: false,
-    description: {
-      ar: 'إعادة تأهيل شاملة تشمل معالجة الجدران، تحديث التمديدات، إعادة تصميم الأسقف والإضاءة، وتركيب الأرضيات والتكسيات الجديدة لتحويل العقار بالكامل.',
-      en: 'Full-scale interior restoration covering wall rehabilitation, ceiling reconstruction, modern lighting integration, and new luxury flooring and cladding.',
-    },
-    designDetails: {
-      ar: [
-        'معالجة هندسية للجدران والأسقف قبل البدء بالتشطيبات الديكورية',
-        'إعادة توزيع المساحات الداخلية لزيادة الإضاءة الطبيعية والاتساع',
-        'تشطيبات نهائية فاخرة مشمولة بضمان 15 سنة',
-      ],
-      en: [
-        'Thorough structural surface preparation prior to decorative finishing',
-        'Spatial reconfiguration to maximize natural light and room flow',
-        'Turnkey luxury finishes backed by our 15-year warranty',
-      ],
-    },
-    executionSpecs: [
-      {
-        label: { ar: 'نطاق العمل', en: 'Scope of Work' },
-        value: { ar: 'أعمال ترميم وتجديد شامل', en: 'Full Restoration & Renovation Works' },
       },
       {
         label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
