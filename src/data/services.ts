@@ -22,7 +22,7 @@ export const SERVICE_CATEGORIES: Array<{ id: ServiceCategory; label: BilingualTe
   { id: 'interior', label: { ar: 'التصميم والديكور السكني', en: 'Residential & Interior Design' } },
   { id: 'cabinetry', label: { ar: 'النجارة وخزائن الملابس', en: 'Woodwork & Custom Wardrobes' } },
   { id: 'renovation', label: { ar: 'التجديد وديكورات المباني', en: 'Renovation & Building Decor' } },
-  { id: 'commercial', label: { ar: 'المحلات والمشاريع العامة', en: 'Commercial & Public Projects' } },
+  { id: 'commercial', label: { ar: 'المحلات وأعمال الواجهات', en: 'Commercial & Facade Works' } },
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
