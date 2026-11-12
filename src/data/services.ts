@@ -255,7 +255,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.customWardrobe,
-    relatedImages: [IMAGES.customWardrobe],
+    relatedImages: [IMAGES.customWardrobe, IMAGES.storage1, IMAGES.storage2],
   },
   {
     id: 'wardrobe-supply-and-design',
@@ -321,7 +321,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.customWardrobe,
-    relatedImages: [IMAGES.customWardrobe],
+    relatedImages: [IMAGES.customWardrobe, IMAGES.storage1, IMAGES.storage2],
   },
   {
     id: 'gypsum-works',
