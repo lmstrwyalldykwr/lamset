@@ -396,40 +396,40 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 'corporate-public-project-lobby',
     category: 'public-projects',
-    categoryLabel: { ar: 'المشاريع العامة', en: 'Public Projects' },
+    categoryLabel: { ar: 'أعمال الواجهات', en: 'Facade Works' },
     title: {
-      ar: 'تنفيذ ديكورات بهو ومناطق استقبال للمشاريع والمؤسسات',
-      en: 'Corporate & Public Facility Reception Lobby Fit-Out',
+      ar: 'أعمال الواجهات المعمارية والتكسيات الخارجية الحديثة',
+      en: 'Architectural Facade Works & Modern Exterior Cladding',
     },
     subtitle: {
-      ar: 'تشطيبات معمارية عالية التحمل للمباني الإدارية والمشاريع العامة',
-      en: 'High-durability architectural finishes for administrative buildings and public facilities',
+      ar: 'تصميم وتنفيذ واجهات المباني والفلل بالتكسيات الطولية، الشتر المعدني، والإضاءة الخطية',
+      en: 'Design and execution of villa and building facades with vertical louvres, metal screens, and linear LEDs',
     },
-    coverImage: IMAGES.commercialBoutique,
-    gallery: [IMAGES.commercialBoutique, IMAGES.heroMajlis],
+    coverImage: IMAGES.facades1,
+    gallery: [IMAGES.facades1, IMAGES.facades2, IMAGES.facades3],
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
-    featured: false,
+    isIllustrativeShowcase: false,
+    featured: true,
     description: {
-      ar: 'تجهيز مناطق الاستقبال والقاعات للمشاريع العامة والشركات بمواصفات فنية تجمع بين المتانة العالية وسهولة الصيانة والمظهر المؤسسي الفخم.',
-      en: 'Outfitting reception lobbies and halls for public projects and corporate offices with durable, low-maintenance, prestigious architectural materials.',
+      ar: 'تنفيذ أعمال الواجهات المعمارية الخارجية للفلل والمباني السكنية والتجارية، عبر دمج التكسيات الطولية المقاومة للعوامل الجوية، المشربيات والقص الليزري المعدني، وأنظمة الإضاءة الخارجية المخفية التي تبرز فخامة المبنى ليلًا ونهارًا.',
+      en: 'Executing architectural exterior facades for residential villas and commercial buildings, integrating weather-resistant vertical slats, laser-cut geometric privacy screens, and recessed exterior linear lighting.',
     },
     designDetails: {
       ar: [
-        'تكسيات جدارية مقاومة للخدش والصدمات للاستخدام الكثيف',
-        'منصات استقبال رسمية مجهزة بمسارات مخفية للتمديدات التقنية',
-        'أنظمة إضاءة موفرة للطاقة وموزعة وفق المعايير الهندسية',
+        'تكسيات واجهات خارجية مقاومة لأشعة الشمس والحرارة والعوامل الجوية',
+        'تصميم وتنفيذ مداخل مرتفعة بإضاءة خطية مدمجة وأسقف خارجية حديثة',
+        'واجهات وشاشات معمارية مقصوصة بالليزر تمنح الخصوصية والتهوية',
       ],
       en: [
-        'Impact- and scratch-resistant wall claddings suited for high foot traffic',
-        'Executive reception desks with concealed cable management channels',
-        'Energy-efficient architectural lighting engineered to commercial codes',
+        'Weather- and UV-resistant exterior facade cladding systems',
+        'Double-height entrance portals with integrated linear LED illumination',
+        'Laser-cut geometric architectural screens providing privacy and shading',
       ],
     },
     executionSpecs: [
       {
         label: { ar: 'نطاق العمل', en: 'Scope of Work' },
-        value: { ar: 'تنفيذ ديكورات مشاريع عامة ومباني', en: 'Public & Corporate Project Execution' },
+        value: { ar: 'تصميم وتنفيذ أعمال الواجهات الخارجية', en: 'Architectural Facade Design & Execution' },
       },
       {
         label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
