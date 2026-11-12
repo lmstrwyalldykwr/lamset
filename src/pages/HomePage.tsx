@@ -241,7 +241,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                         {service.shortDescription[lang]}
                       </p>
                       {service.relatedImages.length > 1 && (
-                        <div className="pt-2 flex items-center gap-2">
+                        <div className="pt-2 flex flex-wrap items-center gap-2">
                           {service.relatedImages.map((imgUrl, idx) => (
                             <button
                               key={`${service.id}-thumb-${idx}`}
@@ -353,7 +353,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                     <div className="p-6 flex flex-col gap-4">
                       {project.gallery.length > 1 && (
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-wrap items-center gap-2">
                           {project.gallery.map((imgUrl, idx) => (
                             <button
                               key={`${project.id}-home-thumb-${idx}`}

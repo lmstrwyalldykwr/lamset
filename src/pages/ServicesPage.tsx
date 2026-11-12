@@ -152,11 +152,11 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ lang, onOpenLightbox
 
                   {/* Related Visual Thumbnails & WhatsApp Service CTA */}
                   <div className="pt-6 border-t border-[#B8A98C]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-wrap items-center gap-3">
                       <span className="text-xs text-[#292B30]/70">
                         {t.relatedVisuals}:
                       </span>
-                      <div className="flex items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
                         {service.relatedImages.map((imgUrl, idx) => (
                           <button
                             key={`${service.id}-rel-${idx}`}
