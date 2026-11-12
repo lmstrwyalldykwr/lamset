@@ -122,9 +122,21 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
     '/images/facades_3.webp',
   ]);
 
+  const gypsum = filterProjectsByCategory(PROJECTS_DATA, 'gypsum-works');
+  assert.equal(gypsum.length, 1);
+  assert.equal(gypsum[0].categoryLabel.ar, 'أعمال الجبس');
+  assert.equal(gypsum[0].title.ar, 'أعمال الجبس');
+  assert.deepEqual(gypsum[0].gallery, [
+    '/images/gypsum_1.webp',
+    '/images/gypsum_2.webp',
+    '/images/gypsum_3.webp',
+    '/images/gypsum_4.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
-  assert.equal(allServices.length, 9);
+  assert.equal(allServices.length, 10);
   assert.equal(allServices.some((s) => s.id === 'restoration-works'), false);
+  assert.equal(allServices.some((s) => s.id === 'gypsum-works' && s.title.ar === 'أعمال الجبس'), true);
 
   const cabinetryServices = filterServicesByCategory(SERVICES_DATA, 'cabinetry');
   assert.equal(cabinetryServices.length, 3);

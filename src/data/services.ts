@@ -323,4 +323,37 @@ export const SERVICES_DATA: ServiceItem[] = [
     image: IMAGES.customWardrobe,
     relatedImages: [IMAGES.customWardrobe],
   },
+  {
+    id: 'gypsum-works',
+    number: '10',
+    category: 'interior',
+    title: {
+      ar: 'أعمال الجبس',
+      en: 'Gypsum Works',
+    },
+    shortDescription: {
+      ar: 'تصميم وتنفيذ الأسقف الجبسية الحديثة والديكورات الجدارية مع الإضاءة الخطية والمسارات المغناطيسية.',
+      en: 'Designing and executing modern gypsum board ceilings and wall moldings with linear LEDs and magnetic tracks.',
+    },
+    fullDescription: {
+      ar: 'ننفذ كافة أعمال الجبس بورد والأسقف المعلقة الحديثة للفلل والشقق والمجالس، مع تأسيس دقيق لمسارات الإضاءة المغناطيسية (Magnetic Track)، الإضاءة الخطية المخفية، وبيوت الستائر، باستخدام ألواح جبس مقاومة للرطوبة والحرارة.',
+      en: 'We execute modern gypsum board ceilings, shadow-gap details, curtain pockets, and recessed magnetic track and linear LED lighting channels using moisture-resistant boards and precision laser leveling.',
+    },
+    features: {
+      ar: [
+        'تنفيذ أسقف جبس بورد فلات وهندسية بقياسات ليزر دقيقة وتشطيبات ناعمة',
+        'تأسيس وتركيب مسارات الإضاءة المغناطيسية (Magnetic Track) والإضاءة الخطية',
+        'تفصيل بيوت الستائر المخفية والإنارة المحيطية الدافئة (Cove Lighting)',
+        'استخدام ألواح جبس مقاومة للرطوبة والحرارة مع ضمان عدم التشقق لمدة 15 سنة',
+      ],
+      en: [
+        'Laser-leveled flat and geometric gypsum board ceiling installations',
+        'Seamless integration of recessed magnetic tracks and linear LED profiles',
+        'Concealed curtain pockets and warm perimeter cove lighting channels',
+        'Moisture-resistant gypsum boards backed by our 15-year quality warranty',
+      ],
+    },
+    image: IMAGES.gypsum1,
+    relatedImages: [IMAGES.gypsum1, IMAGES.gypsum2, IMAGES.gypsum3, IMAGES.gypsum4],
+  },
 ];
