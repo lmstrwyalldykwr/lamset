@@ -221,8 +221,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         'Strict adherence to project timelines for on-schedule store openings',
       ],
     },
-    image: IMAGES.commercialBoutique,
-    relatedImages: [IMAGES.commercialBoutique, IMAGES.architecturalRenovation],
+    image: IMAGES.commercial1,
+    relatedImages: [IMAGES.commercial1, IMAGES.commercial2],
   },
   {
     id: 'public-projects-decoration',
