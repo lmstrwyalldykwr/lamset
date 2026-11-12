@@ -263,10 +263,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       ar: 'تصميم وتنفيذ ديكورات المحلات التجارية وكاونترات الاستقبال بالرخام والذهب',
       en: 'Commercial interior execution featuring travertine reception counters and custom shelving',
     },
-    coverImage: IMAGES.commercialBoutique,
-    gallery: [IMAGES.commercialBoutique, IMAGES.architecturalRenovation],
+    coverImage: IMAGES.commercial1,
+    gallery: [IMAGES.commercial1, IMAGES.commercial2],
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
+    isIllustrativeShowcase: false,
     featured: true,
     description: {
       ar: 'نموذج لتجهيز المعارض والمحلات التجارية الفاخرة بما يعكس قوة العلامة التجارية. يجمع التصميم بين جدار الهوية باللون الكحلي العميق، وكاونتر استقبال من رخام الترافرتين المطعم بالنحاس، ووحدات عرض خشبية منحنية مزودة بإضاءة مخفية لكل رف.',
