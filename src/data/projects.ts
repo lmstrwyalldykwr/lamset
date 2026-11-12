@@ -439,4 +439,50 @@ export const PROJECTS_DATA: ProjectItem[] = [
       },
     ],
   },
+  {
+    id: 'gypsum-board-ceilings-lighting',
+    category: 'gypsum-works',
+    categoryLabel: { ar: 'أعمال الجبس', en: 'Gypsum Works' },
+    title: {
+      ar: 'أعمال الجبس',
+      en: 'Gypsum Board & Ceiling Works',
+    },
+    subtitle: {
+      ar: 'تصميم وتنفيذ الأسقف الجبسية الحديثة مع الإضاءة الخطية والمسارات المغناطيسية',
+      en: 'Design and execution of modern gypsum ceilings with linear LEDs and magnetic tracks',
+    },
+    coverImage: IMAGES.gypsum1,
+    gallery: [IMAGES.gypsum1, IMAGES.gypsum2, IMAGES.gypsum3, IMAGES.gypsum4],
+    location: { ar: 'المدينة المنورة', en: 'Madinah' },
+    isIllustrativeShowcase: false,
+    featured: true,
+    description: {
+      ar: 'تنفيذ أعمال الجبس بورد والأسقف المعلقة الحديثة للفلل والشقق والمجالس، مع تأسيس مسارات الإضاءة المغناطيسية (Magnetic Track) والإضاءة الخطية المخفية وبيوت الستائر، بدقة هندسية وتشطيبات ناعمة تدوم طويلًا.',
+      en: 'Executing modern gypsum board ceilings for villas, apartments, and majlis spaces, featuring recessed magnetic track lighting, linear LED channels, and concealed curtain pockets.',
+    },
+    designDetails: {
+      ar: [
+        'تنفيذ أسقف جبسية حديثة بمستويات مدروسة وتشطيبات ناعمة خالية من الفواصل',
+        'تأسيس مسارات الإضاءة المغناطيسية السوداء والخطوط الضوئية المتناظرة',
+        'بيوت ستائر مخفية وإنارة محيطية دافئة (Cove Lighting) تبرز فخامة المكان',
+        'استخدام ألواح جبس مقاومة للرطوبة والحرارة مع هيكل معدني مجلفن عالي المتانة',
+      ],
+      en: [
+        'Precision laser-leveled gypsum ceilings with seamless joint finishing',
+        'Recessed black magnetic track channels and geometric linear LED strips',
+        'Concealed curtain pockets and warm perimeter cove illumination',
+        'Moisture-resistant gypsum boards mounted on heavy-gauge galvanized framing',
+      ],
+    },
+    executionSpecs: [
+      {
+        label: { ar: 'نطاق العمل', en: 'Scope of Work' },
+        value: { ar: 'تنفيذ أسقف وديكورات جبس بورد وإضاءة حديثة', en: 'Gypsum Ceilings, Wall Moldings & Modern Lighting' },
+      },
+      {
+        label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
+        value: { ar: 'ضمان 15 سنة', en: '15-Year Warranty' },
+      },
+    ],
+  },
 ];
