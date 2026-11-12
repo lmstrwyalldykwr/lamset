@@ -45,7 +45,7 @@ export const PROJECT_CATEGORIES: Array<{ id: ProjectCategoryId; label: Bilingual
   { id: 'wardrobes', label: { ar: 'خزائن الملابس', en: 'Wardrobes' } },
   { id: 'storage-cabinets', label: { ar: 'الخزائن والتخزين', en: 'Storage & Cabinets' } },
   { id: 'commercial-stores', label: { ar: 'المحلات التجارية', en: 'Commercial Stores' } },
-  { id: 'public-projects', label: { ar: 'المشاريع العامة', en: 'Public Projects' } },
+  { id: 'public-projects', label: { ar: 'أعمال الواجهات', en: 'Facade Works' } },
 ];
 
 /**
