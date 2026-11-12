@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-royal-navy: #071A35;
+    --color-deep-navy: #0B1D38;
+    --color-luxury-gold: #C9A45C;
+    --color-champagne-gold: #DCC18A;
+    --color-warm-ivory: #F5F1E8;
+    --color-pure-white: #FFFFFF;
+    --color-charcoal: #292B30;
+    --color-stone-beige: #B8A98C;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  html[dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  .font-display-en {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
