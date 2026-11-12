@@ -113,6 +113,15 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
     '/images/kitchens_3.webp',
   ]);
 
+  const facades = filterProjectsByCategory(PROJECTS_DATA, 'public-projects');
+  assert.equal(facades.length, 1);
+  assert.equal(facades[0].categoryLabel.ar, 'أعمال الواجهات');
+  assert.deepEqual(facades[0].gallery, [
+    '/images/facades_1.webp',
+    '/images/facades_2.webp',
+    '/images/facades_3.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
   assert.equal(allServices.length, 9);
   assert.equal(allServices.some((s) => s.id === 'restoration-works'), false);
