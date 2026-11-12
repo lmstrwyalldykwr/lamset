@@ -149,7 +149,13 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
                     </span>
                     <span className="tabular-nums">
                       {project.gallery.length}{' '}
-                      {lang === 'ar' ? 'صور' : 'Photos'}
+                      {lang === 'ar'
+                        ? project.gallery.length === 1
+                          ? 'صورة'
+                          : 'صور'
+                        : project.gallery.length === 1
+                        ? 'Photo'
+                        : 'Photos'}
                     </span>
                   </div>
                 </div>

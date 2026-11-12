@@ -170,28 +170,30 @@ export const ProjectDetailsPage: React.FC<ProjectDetailsPageProps> = ({
             />
           </div>
 
-          {/* Interactive Gallery Thumbnails */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
-            {project.gallery.map((imgUrl, idx) => (
-              <button
-                key={`${project.id}-img-${idx}`}
-                type="button"
-                onClick={() => setActiveImageIndex(idx)}
-                className={`relative h-20 sm:h-24 rounded-xl overflow-hidden border-2 transition-all cursor-pointer ${
-                  idx === safeImageIndex
-                    ? 'border-[#071A35] ring-2 ring-[#C9A45C]'
-                    : 'border-transparent opacity-70 hover:opacity-100'
-                }`}
-              >
-                <img
-                  src={imgUrl}
-                  alt={`${project.title[lang]} view ${idx + 1}`}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
-          </div>
+          {/* Interactive Gallery Thumbnails (shown only when multiple photos exist) */}
+          {project.gallery.length > 1 && (
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+              {project.gallery.map((imgUrl, idx) => (
+                <button
+                  key={`${project.id}-img-${idx}`}
+                  type="button"
+                  onClick={() => setActiveImageIndex(idx)}
+                  className={`relative h-20 sm:h-24 rounded-xl overflow-hidden border-2 transition-all cursor-pointer ${
+                    idx === safeImageIndex
+                      ? 'border-[#071A35] ring-2 ring-[#C9A45C]'
+                      : 'border-transparent opacity-70 hover:opacity-100'
+                  }`}
+                >
+                  <img
+                    src={imgUrl}
+                    alt={`${project.title[lang]} view ${idx + 1}`}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Project Description, Design Highlights & Execution Specs */}
