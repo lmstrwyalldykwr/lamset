@@ -115,7 +115,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
             <div>
               <span className="block text-xl sm:text-2xl font-bold text-[#DCC18A] tabular-nums">
-                10
+                9
               </span>
               <span className="text-[#B8A98C]">
                 {lang === 'ar' ? 'خدمات ديكور وخزائن متكاملة' : 'Specialized Services'}
