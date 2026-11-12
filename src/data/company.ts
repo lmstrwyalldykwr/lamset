@@ -15,7 +15,7 @@ export interface WorkingDay {
 
 export const IMAGES = {
   heroMajlis: '/images/hero_luxury_majlis_1794440345651.webp',
-  customWardrobe: '/images/interior_custom_wardrobe_1794440347310.webp',
+  customWardrobe: '/images/custom_wardrobe_main.webp',
   modernBedroom: '/images/interior_modern_bedroom_1794440348787.webp',
   commercialBoutique: '/images/interior_commercial_boutique_1794440350349.webp',
   architecturalRenovation: '/images/interior_architectural_renovation_1794440349766.webp',
