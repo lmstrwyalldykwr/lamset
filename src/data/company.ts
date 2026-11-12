@@ -32,6 +32,8 @@ export const IMAGES = {
   gypsum2: '/images/gypsum_2.webp',
   gypsum3: '/images/gypsum_3.webp',
   gypsum4: '/images/gypsum_4.webp',
+  storage1: '/images/storage_1.webp',
+  storage2: '/images/storage_2.webp',
   customWardrobe: '/images/custom_wardrobe_main.webp',
   modernBedroom: '/images/modern_bedroom_main.webp',
   commercialBoutique: '/images/interior_commercial_boutique_1794440350349.webp',
