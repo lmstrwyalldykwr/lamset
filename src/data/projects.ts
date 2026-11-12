@@ -313,10 +313,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       ar: 'خزائن مطبخ بدون مقابض وتكسيات جدارية متكاملة مع منطقة الطعام',
       en: 'Handleless kitchen cabinetry seamlessly integrated with formal dining wall cladding',
     },
-    coverImage: IMAGES.architecturalRenovation,
-    gallery: [IMAGES.architecturalRenovation, IMAGES.heroMajlis],
+    coverImage: IMAGES.kitchens1,
+    gallery: [IMAGES.kitchens1, IMAGES.kitchens2, IMAGES.kitchens3],
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
+    isIllustrativeShowcase: false,
     featured: true,
     description: {
       ar: 'يوضح هذا النموذج حلولنا في تجديد المطابخ التحضيرية المفتوحة وربطها بصالات الطعام والمعيشة، عبر تنفيذ خزائن حائطية ملساء بدون مقابض، وجزيرة رخامية بعروق متطابقة (Bookmatched)، مع وحدات عرض زجاجية مضاءة.',
