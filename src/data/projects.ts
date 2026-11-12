@@ -9,7 +9,8 @@ export type ProjectCategoryId =
   | 'wardrobes'
   | 'storage-cabinets'
   | 'commercial-stores'
-  | 'public-projects';
+  | 'public-projects'
+  | 'gypsum-works';
 
 export interface ProjectSpecification {
   label: BilingualText;
@@ -46,6 +47,7 @@ export const PROJECT_CATEGORIES: Array<{ id: ProjectCategoryId; label: Bilingual
   { id: 'storage-cabinets', label: { ar: 'الخزائن والتخزين', en: 'Storage & Cabinets' } },
   { id: 'commercial-stores', label: { ar: 'المحلات التجارية', en: 'Commercial Stores' } },
   { id: 'public-projects', label: { ar: 'أعمال الواجهات', en: 'Facade Works' } },
+  { id: 'gypsum-works', label: { ar: 'أعمال الجبس', en: 'Gypsum Works' } },
 ];
 
 /**
