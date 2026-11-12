@@ -163,7 +163,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
                 {/* Card Copy */}
                 <div className="p-6 space-y-2.5">
                   {project.gallery.length > 1 && (
-                    <div className="pb-1 flex items-center gap-2">
+                    <div className="pb-1 flex flex-wrap items-center gap-2">
                       {project.gallery.map((imgUrl, idx) => (
                         <button
                           key={`${project.id}-proj-thumb-${idx}`}
