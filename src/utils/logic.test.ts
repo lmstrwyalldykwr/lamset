@@ -105,6 +105,14 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
     '/images/commercial_2.webp',
   ]);
 
+  const kitchens = filterProjectsByCategory(PROJECTS_DATA, 'kitchens');
+  assert.equal(kitchens.length, 1);
+  assert.deepEqual(kitchens[0].gallery, [
+    '/images/kitchens_1.webp',
+    '/images/kitchens_2.webp',
+    '/images/kitchens_3.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
   assert.equal(allServices.length, 10);
 
