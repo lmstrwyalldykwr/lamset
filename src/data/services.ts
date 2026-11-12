@@ -56,8 +56,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         'Cohesive coordination of flooring, wall treatments, and ceilings',
       ],
     },
-    image: IMAGES.heroMajlis,
-    relatedImages: [IMAGES.heroMajlis],
+    image: IMAGES.homeDecor1,
+    relatedImages: [IMAGES.homeDecor1, IMAGES.homeDecor2, IMAGES.homeDecor3],
   },
   {
     id: 'interior-design',

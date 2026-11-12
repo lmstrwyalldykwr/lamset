@@ -58,6 +58,50 @@ export const PROJECT_CATEGORIES: Array<{ id: ProjectCategoryId; label: Bilingual
  */
 export const PROJECTS_DATA: ProjectItem[] = [
   {
+    id: 'villa-interior-home-decor-living',
+    category: 'home-decor',
+    categoryLabel: { ar: 'ديكورات المنازل', en: 'Home Decoration' },
+    title: {
+      ar: 'ديكورات صالة فيلا سكنية بنظام المساحات المفتوحة',
+      en: 'Residential Villa Open-Concept Living & Family Lounge Decor',
+    },
+    subtitle: {
+      ar: 'تناغم التكسيات الخشبية والرخامية مع الإضاءة الطبيعية في صالات المعيشة',
+      en: 'Seamless integration of wood cladding, stone textures, and natural daylight',
+    },
+    coverImage: IMAGES.homeDecor1,
+    gallery: [IMAGES.homeDecor1, IMAGES.homeDecor2, IMAGES.homeDecor3],
+    location: { ar: 'المدينة المنورة', en: 'Madinah' },
+    isIllustrativeShowcase: false,
+    featured: true,
+    description: {
+      ar: 'تصميم متكامل لصالات المعيشة العائلية يركز على الرحابة والاتصال البصري بين مناطق الجلوس، مع توظيف الستائر الممتدة من السقف للأرض والتكسيات الدافئة.',
+      en: 'Complete residential living room decoration emphasizing spatial flow, floor-to-ceiling drapery bays, and warm architectural wall treatments.',
+    },
+    designDetails: {
+      ar: [
+        'ربط بصري متناغم بين صالة الجلوس العائلية ومنطقة الضيافة',
+        'بيوت ستائر مخفية داخل الجبس مع إضاءة دافئة على امتداد الواجهة الزجاجية',
+        'توظيف ألوان الهوية (الكحلي والذهبي والبيج) بتوازن مريح للعين',
+      ],
+      en: [
+        'Visual continuity between family living zones and guest reception areas',
+        'Recessed ceiling curtain pockets with integrated warm perimeter lighting',
+        'Balanced application of Royal Navy, Champagne Gold, and Stone Beige tones',
+      ],
+    },
+    executionSpecs: [
+      {
+        label: { ar: 'نطاق العمل', en: 'Scope of Work' },
+        value: { ar: 'ديكورات منازل متكاملة', en: 'Full Home Interior Decoration' },
+      },
+      {
+        label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
+        value: { ar: 'ضمان 15 سنة', en: '15-Year Warranty' },
+      },
+    ],
+  },
+  {
     id: 'royal-majlis-reception-design',
     category: 'majlis',
     categoryLabel: { ar: 'المجالس', en: 'Majlis' },
@@ -300,50 +344,6 @@ export const PROJECTS_DATA: ProjectItem[] = [
       {
         label: { ar: 'الخامات الأساسية', en: 'Primary Materials' },
         value: { ar: 'ألواح مقاومة للرطوبة والحرارة، رخام، إضاءة خطية', en: 'Moisture/Heat-Resistant Panels, Marble, Linear LEDs' },
-      },
-      {
-        label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
-        value: { ar: 'ضمان 15 سنة', en: '15-Year Warranty' },
-      },
-    ],
-  },
-  {
-    id: 'villa-interior-home-decor-living',
-    category: 'home-decor',
-    categoryLabel: { ar: 'ديكورات المنازل', en: 'Home Decoration' },
-    title: {
-      ar: 'ديكورات صالة فيلا سكنية بنظام المساحات المفتوحة',
-      en: 'Residential Villa Open-Concept Living & Family Lounge Decor',
-    },
-    subtitle: {
-      ar: 'تناغم التكسيات الخشبية والرخامية مع الإضاءة الطبيعية في صالات المعيشة',
-      en: 'Seamless integration of wood cladding, stone textures, and natural daylight',
-    },
-    coverImage: IMAGES.heroMajlis,
-    gallery: [IMAGES.heroMajlis, IMAGES.architecturalRenovation],
-    location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
-    featured: false,
-    description: {
-      ar: 'تصميم متكامل لصالات المعيشة العائلية يركز على الرحابة والاتصال البصري بين مناطق الجلوس، مع توظيف الستائر الممتدة من السقف للأرض والتكسيات الدافئة.',
-      en: 'Complete residential living room decoration emphasizing spatial flow, floor-to-ceiling drapery bays, and warm architectural wall treatments.',
-    },
-    designDetails: {
-      ar: [
-        'ربط بصري متناغم بين صالة الجلوس العائلية ومنطقة الضيافة',
-        'بيوت ستائر مخفية داخل الجبس مع إضاءة دافئة على امتداد الواجهة الزجاجية',
-        'توظيف ألوان الهوية (الكحلي والذهبي والبيج) بتوازن مريح للعين',
-      ],
-      en: [
-        'Visual continuity between family living zones and guest reception areas',
-        'Recessed ceiling curtain pockets with integrated warm perimeter lighting',
-        'Balanced application of Royal Navy, Champagne Gold, and Stone Beige tones',
-      ],
-    },
-    executionSpecs: [
-      {
-        label: { ar: 'نطاق العمل', en: 'Scope of Work' },
-        value: { ar: 'ديكورات منازل متكاملة', en: 'Full Home Interior Decoration' },
       },
       {
         label: { ar: 'الضمان المعتمد', en: 'Warranty Coverage' },
