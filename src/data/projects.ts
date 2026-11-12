@@ -364,10 +364,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
       en: 'Smart space utilization through flush built-in cabinets and custom display shelving',
     },
     coverImage: IMAGES.customWardrobe,
-    gallery: [IMAGES.customWardrobe],
+    gallery: [IMAGES.customWardrobe, IMAGES.storage1, IMAGES.storage2],
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    isIllustrativeShowcase: true,
-    featured: false,
+    isIllustrativeShowcase: false,
+    featured: true,
     description: {
       ar: 'حلول تخزين مبتكرة تندمج مع الجدران كقطعة ديكورية واحدة، توفر سعة تخزينية كبيرة للعبايات والأحذية والمقتنيات المنزلية دون الانتقاص من مساحة الممرات.',
       en: 'Innovative storage solutions that blend flush into architectural walls, providing generous capacity for abayas, footwear, and household items.',
