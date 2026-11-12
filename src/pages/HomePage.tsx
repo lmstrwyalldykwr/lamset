@@ -233,130 +233,183 @@ export const HomePage: React.FC<HomePageProps> = ({
                     </span>
                   </div>
 
-                  <div className="p-6 space-y-2.5">
-                    <h3 className="text-lg font-bold text-[#071A35]">
-                      {service.number}. {service.title[lang]}
-                    </h3>
-                    <p className="text-sm text-[#292B30]/80 leading-relaxed">
-                      {service.shortDescription[lang]}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="px-6 pb-6 pt-2">
-                  <a
-                    href={`/services#${service.id}`}
-                    onClick={(e) => handleLink(e, `/services#${service.id}`)}
-                    className="inline-flex items-center gap-2 text-xs font-bold text-[#071A35] group-hover:text-[#C9A45C] transition-colors whitespace-nowrap"
-                  >
-                    <span>{t.homeServices.learnMore}</span>
-                    <ArrowIcon className="w-3.5 h-3.5 text-[#C9A45C]" />
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 4: SELECTED PORTFOLIO SHOWCASE (Masonry / Bento Grid + Lightbox) */}
-      <section className="py-20 sm:py-24 bg-[#F5F1E8] border-b border-[#B8A98C]/25">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3 max-w-2xl">
-              <p className="text-xs font-semibold text-[#071A35]/75 tracking-wide">
-                {t.homePortfolio.kicker}
-              </p>
-              <h2 className="text-2xl sm:text-4xl font-bold text-[#071A35] text-balance">
-                {t.homePortfolio.title}
-              </h2>
-              <p className="text-sm sm:text-base text-[#292B30]/80 leading-relaxed">
-                {t.homePortfolio.subtitle}
-              </p>
-            </div>
-
-            <a
-              href="/projects"
-              onClick={(e) => handleLink(e, '/projects')}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[#071A35] text-[#F5F1E8] text-xs sm:text-sm font-semibold hover:bg-[#C9A45C] hover:text-[#071A35] transition-colors whitespace-nowrap shrink-0 self-start md:self-auto"
-            >
-              <span>{t.homePortfolio.viewAllProjects}</span>
-              <ArrowIcon className="w-4 h-4" />
-            </a>
-          </div>
-
-          <p className="text-xs text-[#292B30]/70 bg-[#FFFFFF] px-4 py-3 rounded-lg border border-[#B8A98C]/35">
-            {t.homePortfolio.illustrativeNote}
-          </p>
-
-          {/* Asymmetric Bento / Masonry Portfolio Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            {featuredProjects.map((project, index) => {
-              const isWide = index === 0 || index === 3;
-              return (
-                <article
-                  key={project.id}
-                  className={`${
-                    isWide ? 'md:col-span-7' : 'md:col-span-5'
-                  } group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#B8A98C]/35 flex flex-col justify-between`}
-                >
-                  <div className="relative h-72 sm:h-80 overflow-hidden bg-[#071A35]">
-                    <img
-                      src={project.coverImage}
-                      alt={project.title[lang]}
-                      loading="lazy"
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
-                      onClick={() =>
-                        onOpenLightbox(project.gallery, 0, project.title[lang])
-                      }
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#071A35]/80 via-[#071A35]/20 to-transparent pointer-events-none" />
-
-                    <button
-                      type="button"
-                      onClick={() =>
-                        onOpenLightbox(project.gallery, 0, project.title[lang])
-                      }
-                      aria-label={`${t.homePortfolio.zoomImage}: ${project.title[lang]}`}
-                      className="absolute top-4 end-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#071A35]/85 border border-[#C9A45C]/40 text-xs font-medium text-[#F5F1E8] hover:bg-[#C9A45C] hover:text-[#071A35] transition-colors cursor-pointer"
-                    >
-                      <Expand className="w-3.5 h-3.5" />
-                      <span>{t.homePortfolio.zoomImage}</span>
-                    </button>
-                  </div>
-
-                  <div className="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2 text-xs text-[#292B30]/70">
-                        <span>{project.categoryLabel[lang]}</span>
-                        <span aria-hidden="true">·</span>
-                        <span>{project.location[lang]}</span>
-                      </div>
+                    <div className="p-6 space-y-2.5">
                       <h3 className="text-lg font-bold text-[#071A35]">
-                        <a
-                          href={`/projects/${project.id}`}
-                          onClick={(e) => handleLink(e, `/projects/${project.id}`)}
-                          className="hover:text-[#C9A45C] transition-colors"
-                        >
-                          {project.title[lang]}
-                        </a>
+                        {service.number}. {service.title[lang]}
                       </h3>
+                      <p className="text-sm text-[#292B30]/80 leading-relaxed">
+                        {service.shortDescription[lang]}
+                      </p>
+                      {service.relatedImages.length > 1 && (
+                        <div className="pt-2 flex items-center gap-2">
+                          {service.relatedImages.map((imgUrl, idx) => (
+                            <button
+                              key={`${service.id}-thumb-${idx}`}
+                              type="button"
+                              onClick={() =>
+                                onOpenLightbox(
+                                  service.relatedImages,
+                                  idx,
+                                  service.title[lang]
+                                )
+                              }
+                              className="h-12 w-16 rounded-lg overflow-hidden border border-[#B8A98C]/50 hover:border-[#C9A45C] transition-colors cursor-pointer shrink-0"
+                            >
+                              <img
+                                src={imgUrl}
+                                alt={`${service.title[lang]} ${idx + 1}`}
+                                loading="lazy"
+                                className="w-full h-full object-cover"
+                              />
+                            </button>
+                          ))}
+                        </div>
+                      )}
                     </div>
+                  </div>
 
+                  <div className="px-6 pb-6 pt-2">
                     <a
-                      href={`/projects/${project.id}`}
-                      onClick={(e) => handleLink(e, `/projects/${project.id}`)}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[#071A35]/20 text-xs font-semibold text-[#071A35] hover:bg-[#071A35] hover:text-[#F5F1E8] transition-colors whitespace-nowrap shrink-0 self-start sm:self-center"
+                      href={`/services#${service.id}`}
+                      onClick={(e) => handleLink(e, `/services#${service.id}`)}
+                      className="inline-flex items-center gap-2 text-xs font-bold text-[#071A35] group-hover:text-[#C9A45C] transition-colors whitespace-nowrap"
                     >
-                      <span>{t.homePortfolio.viewDetails}</span>
+                      <span>{t.homeServices.learnMore}</span>
                       <ArrowIcon className="w-3.5 h-3.5 text-[#C9A45C]" />
                     </a>
                   </div>
                 </article>
-              );
-            })}
+              ))}
+            </div>
           </div>
+        </section>
+
+        {/* SECTION 4: SELECTED PORTFOLIO SHOWCASE (Masonry / Bento Grid + Lightbox) */}
+        <section className="py-20 sm:py-24 bg-[#F5F1E8] border-b border-[#B8A98C]/25">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-xs font-semibold text-[#071A35]/75 tracking-wide">
+                  {t.homePortfolio.kicker}
+                </p>
+                <h2 className="text-2xl sm:text-4xl font-bold text-[#071A35] text-balance">
+                  {t.homePortfolio.title}
+                </h2>
+                <p className="text-sm sm:text-base text-[#292B30]/80 leading-relaxed">
+                  {t.homePortfolio.subtitle}
+                </p>
+              </div>
+
+              <a
+                href="/projects"
+                onClick={(e) => handleLink(e, '/projects')}
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-[#071A35] text-[#F5F1E8] text-xs sm:text-sm font-semibold hover:bg-[#C9A45C] hover:text-[#071A35] transition-colors whitespace-nowrap shrink-0 self-start md:self-auto"
+              >
+                <span>{t.homePortfolio.viewAllProjects}</span>
+                <ArrowIcon className="w-4 h-4" />
+              </a>
+            </div>
+
+            <p className="text-xs text-[#292B30]/70 bg-[#FFFFFF] px-4 py-3 rounded-lg border border-[#B8A98C]/35">
+              {t.homePortfolio.illustrativeNote}
+            </p>
+
+            {/* Asymmetric Bento / Masonry Portfolio Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+              {featuredProjects.map((project, index) => {
+                const isWide = index === 0 || index === 3;
+                return (
+                  <article
+                    key={project.id}
+                    className={`${
+                      isWide ? 'md:col-span-7' : 'md:col-span-5'
+                    } group bg-[#FFFFFF] rounded-2xl overflow-hidden border border-[#B8A98C]/35 flex flex-col justify-between`}
+                  >
+                    <div className="relative h-72 sm:h-80 overflow-hidden bg-[#071A35]">
+                      <img
+                        src={project.coverImage}
+                        alt={project.title[lang]}
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
+                        onClick={() =>
+                          onOpenLightbox(project.gallery, 0, project.title[lang])
+                        }
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071A35]/80 via-[#071A35]/20 to-transparent pointer-events-none" />
+
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onOpenLightbox(project.gallery, 0, project.title[lang])
+                        }
+                        aria-label={`${t.homePortfolio.zoomImage}: ${project.title[lang]}`}
+                        className="absolute top-4 end-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#071A35]/85 border border-[#C9A45C]/40 text-xs font-medium text-[#F5F1E8] hover:bg-[#C9A45C] hover:text-[#071A35] transition-colors cursor-pointer"
+                      >
+                        <Expand className="w-3.5 h-3.5" />
+                        <span>{t.homePortfolio.zoomImage}</span>
+                      </button>
+                    </div>
+
+                    <div className="p-6 flex flex-col gap-4">
+                      {project.gallery.length > 1 && (
+                        <div className="flex items-center gap-2">
+                          {project.gallery.map((imgUrl, idx) => (
+                            <button
+                              key={`${project.id}-home-thumb-${idx}`}
+                              type="button"
+                              onClick={() =>
+                                onOpenLightbox(
+                                  project.gallery,
+                                  idx,
+                                  project.title[lang]
+                                )
+                              }
+                              className="h-12 w-16 rounded-lg overflow-hidden border border-[#B8A98C]/50 hover:border-[#C9A45C] transition-colors cursor-pointer shrink-0"
+                            >
+                              <img
+                                src={imgUrl}
+                                alt={`${project.title[lang]} ${idx + 1}`}
+                                loading="lazy"
+                                className="w-full h-full object-cover"
+                              />
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-2 text-xs text-[#292B30]/70">
+                            <span>{project.categoryLabel[lang]}</span>
+                            <span aria-hidden="true">·</span>
+                            <span>{project.location[lang]}</span>
+                          </div>
+                          <h3 className="text-lg font-bold text-[#071A35]">
+                            <a
+                              href={`/projects/${project.id}`}
+                              onClick={(e) => handleLink(e, `/projects/${project.id}`)}
+                              className="hover:text-[#C9A45C] transition-colors"
+                            >
+                              {project.title[lang]}
+                            </a>
+                          </h3>
+                        </div>
+
+                        <a
+                          href={`/projects/${project.id}`}
+                          onClick={(e) => handleLink(e, `/projects/${project.id}`)}
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[#071A35]/20 text-xs font-semibold text-[#071A35] hover:bg-[#071A35] hover:text-[#F5F1E8] transition-colors whitespace-nowrap shrink-0 self-start sm:self-center"
+                        >
+                          <span>{t.homePortfolio.viewDetails}</span>
+                          <ArrowIcon className="w-3.5 h-3.5 text-[#C9A45C]" />
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
         </div>
       </section>
 
