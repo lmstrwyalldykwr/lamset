@@ -114,9 +114,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
       en: 'Design showcase illustrating our standards in grand majlis execution and cove lighting',
     },
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
-    coverImage: IMAGES.heroMajlis,
-    gallery: [IMAGES.heroMajlis, IMAGES.architecturalRenovation],
-    isIllustrativeShowcase: true,
+    coverImage: IMAGES.majlis1,
+    gallery: [IMAGES.majlis1, IMAGES.majlis2],
+    isIllustrativeShowcase: false,
     featured: true,
     description: {
       ar: 'يستعرض هذا النموذج أسلوب مؤسسة لمسة رؤيا في المزج بين الأصالة السعودية في المجالس الواسعة والخطوط العصرية الهادئة. تم اعتماد تكسيات خشب الجوز المضلعة مع شرائح النحاس الذهبي المطفي، وأسقف جبسية متعدّدة المستويات بإضاءة دافئة غير مباشرة تمنح المكان هيبة وراحة بصرية.',

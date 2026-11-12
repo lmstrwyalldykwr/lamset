@@ -91,6 +91,13 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
     '/images/home_decor_3.webp',
   ]);
 
+  const majlis = filterProjectsByCategory(PROJECTS_DATA, 'majlis');
+  assert.equal(majlis.length, 1);
+  assert.deepEqual(majlis[0].gallery, [
+    '/images/majlis_1.webp',
+    '/images/majlis_2.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
   assert.equal(allServices.length, 10);
 
