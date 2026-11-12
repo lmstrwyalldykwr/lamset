@@ -159,41 +159,8 @@ export const SERVICES_DATA: ServiceItem[] = [
     relatedImages: [IMAGES.commercialBoutique, IMAGES.architecturalRenovation],
   },
   {
-    id: 'restoration-works',
-    number: '05',
-    category: 'renovation',
-    title: {
-      ar: 'أعمال الترميم',
-      en: 'Architectural Restoration Works',
-    },
-    shortDescription: {
-      ar: 'معالجة متكاملة وإعادة تأهيل للمباني والمساحات الداخلية بأسس فنية تضمن السلامة والجمال.',
-      en: 'Comprehensive structural and interior rehabilitation restoring strength, functionality, and elegance.',
-    },
-    fullDescription: {
-      ar: 'نقوم بأعمال الترميم الداخلي ومعالجة الجدران والأسقف وإعادة تأهيل المساحات المتضررة أو القديمة، مع تنفيذ تشطيبات دقيقة تعيد للمكان رونقه وتضمن استدامته تحت مظلة ضمان المؤسسة.',
-      en: 'We perform thorough interior restoration, treating walls and ceilings, rehabilitating worn or damaged spaces, and applying precision finishes backed by our 15-year quality warranty.',
-    },
-    features: {
-      ar: [
-        'معالجة التشققات والرطوبة وإعادة تأهيل الجدران والأسقف',
-        'ترميم شامل للمنازل والفلل والمحلات قبل التشطيب الديكوري',
-        'استخدام مواد عزل ومعالجة معتمدة وعالية الكفاءة',
-        'ضمان يصل إلى 15 سنة على جودة الأعمال المنفذة',
-      ],
-      en: [
-        'Treatment of cracks, moisture, and wall/ceiling rehabilitation',
-        'Full pre-decoration structural and surface restoration',
-        'Certified high-performance insulation and finishing materials',
-        'Up to 15-year warranty on executed restoration works',
-      ],
-    },
-    image: IMAGES.architecturalRenovation,
-    relatedImages: [IMAGES.architecturalRenovation],
-  },
-  {
     id: 'commercial-store-decoration',
-    number: '06',
+    number: '05',
     category: 'commercial',
     title: {
       ar: 'ديكورات المحلات التجارية',
@@ -226,7 +193,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'public-projects-decoration',
-    number: '07',
+    number: '06',
     category: 'commercial',
     title: {
       ar: 'تنفيذ ديكورات المشاريع العامة',
@@ -259,7 +226,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'carpentry-and-cabinets',
-    number: '08',
+    number: '07',
     category: 'cabinetry',
     title: {
       ar: 'النجارة والخزائن',
@@ -292,7 +259,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'wardrobe-supply-and-design',
-    number: '09',
+    number: '08',
     category: 'cabinetry',
     title: {
       ar: 'توريد وتصميم خزائن الملابس',
@@ -325,7 +292,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'custom-cabinets-execution',
-    number: '10',
+    number: '09',
     category: 'cabinetry',
     title: {
       ar: 'تنفيذ الخزائن حسب الطلب',
