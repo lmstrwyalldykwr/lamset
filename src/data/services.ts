@@ -57,7 +57,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.heroMajlis,
-    relatedImages: [IMAGES.heroMajlis, IMAGES.modernBedroom],
+    relatedImages: [IMAGES.heroMajlis],
   },
   {
     id: 'interior-design',
@@ -90,7 +90,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.modernBedroom,
-    relatedImages: [IMAGES.modernBedroom, IMAGES.heroMajlis],
+    relatedImages: [IMAGES.modernBedroom],
   },
   {
     id: 'home-renovation-development',
@@ -189,7 +189,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.architecturalRenovation,
-    relatedImages: [IMAGES.architecturalRenovation, IMAGES.modernBedroom],
+    relatedImages: [IMAGES.architecturalRenovation],
   },
   {
     id: 'commercial-store-decoration',
