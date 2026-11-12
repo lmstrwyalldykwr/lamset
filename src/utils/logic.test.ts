@@ -133,6 +133,15 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
     '/images/gypsum_4.webp',
   ]);
 
+  const storage = filterProjectsByCategory(PROJECTS_DATA, 'storage-cabinets');
+  assert.equal(storage.length, 1);
+  assert.equal(storage[0].categoryLabel.ar, 'الخزائن والتخزين');
+  assert.deepEqual(storage[0].gallery, [
+    '/images/custom_wardrobe_main.webp',
+    '/images/storage_1.webp',
+    '/images/storage_2.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
   assert.equal(allServices.length, 10);
   assert.equal(allServices.some((s) => s.id === 'restoration-works'), false);
