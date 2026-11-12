@@ -120,7 +120,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       en: 'Floor-to-ceiling custom wardrobe concept with central jewelry island',
     },
     coverImage: IMAGES.customWardrobe,
-    gallery: [IMAGES.customWardrobe, IMAGES.modernBedroom, IMAGES.heroMajlis],
+    gallery: [IMAGES.customWardrobe],
     location: { ar: 'المدينة المنورة', en: 'Madinah' },
     isIllustrativeShowcase: true,
     featured: true,

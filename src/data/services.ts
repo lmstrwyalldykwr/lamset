@@ -288,7 +288,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.customWardrobe,
-    relatedImages: [IMAGES.customWardrobe, IMAGES.architecturalRenovation],
+    relatedImages: [IMAGES.customWardrobe],
   },
   {
     id: 'wardrobe-supply-and-design',
@@ -321,7 +321,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.customWardrobe,
-    relatedImages: [IMAGES.customWardrobe, IMAGES.modernBedroom],
+    relatedImages: [IMAGES.customWardrobe],
   },
   {
     id: 'custom-cabinets-execution',
@@ -354,6 +354,6 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.customWardrobe,
-    relatedImages: [IMAGES.customWardrobe, IMAGES.architecturalRenovation],
+    relatedImages: [IMAGES.customWardrobe],
   },
 ];
