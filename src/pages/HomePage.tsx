@@ -213,29 +213,37 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            {SERVICES_DATA.map((service) => (
-              <article
-                key={service.id}
-                className="group bg-[#F5F1E8]/60 rounded-xl overflow-hidden border border-[#B8A98C]/30 flex flex-col justify-between transition-colors hover:border-[#C9A45C]"
-              >
-                <div>
-                  <div className="relative h-52 overflow-hidden bg-[#071A35]">
-                    <img
-                      src={service.image}
-                      alt={service.title[lang]}
-                      loading="lazy"
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#071A35]/70 via-transparent to-transparent" />
-                    <span className="absolute bottom-3 start-4 text-xs font-semibold text-[#DCC18A] tabular-nums">
-                      {service.number} · {service.title[lang]}
-                    </span>
-                  </div>
+            {SERVICES_DATA.map((service) => {
+              const displayTitle =
+                service.id === 'interior-design'
+                  ? lang === 'ar'
+                    ? 'غرف النوم'
+                    : 'Bedrooms'
+                  : service.title[lang];
+
+              return (
+                <article
+                  key={service.id}
+                  className="group bg-[#F5F1E8]/60 rounded-xl overflow-hidden border border-[#B8A98C]/30 flex flex-col justify-between transition-colors hover:border-[#C9A45C]"
+                >
+                  <div>
+                    <div className="relative h-52 overflow-hidden bg-[#071A35]">
+                      <img
+                        src={service.image}
+                        alt={displayTitle}
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071A35]/70 via-transparent to-transparent" />
+                      <span className="absolute bottom-3 start-4 text-xs font-semibold text-[#DCC18A] tabular-nums">
+                        {service.number} · {displayTitle}
+                      </span>
+                    </div>
 
                     <div className="p-6 space-y-2.5">
                       <h3 className="text-lg font-bold text-[#071A35]">
-                        {service.number}. {service.title[lang]}
+                        {service.number}. {displayTitle}
                       </h3>
                       <p className="text-sm text-[#292B30]/80 leading-relaxed">
                         {service.shortDescription[lang]}
@@ -250,14 +258,14 @@ export const HomePage: React.FC<HomePageProps> = ({
                                 onOpenLightbox(
                                   service.relatedImages,
                                   idx,
-                                  service.title[lang]
+                                  displayTitle
                                 )
                               }
                               className="h-12 w-16 rounded-lg overflow-hidden border border-[#B8A98C]/50 hover:border-[#C9A45C] transition-colors cursor-pointer shrink-0"
                             >
                               <img
                                 src={imgUrl}
-                                alt={`${service.title[lang]} ${idx + 1}`}
+                                alt={`${displayTitle} ${idx + 1}`}
                                 loading="lazy"
                                 className="w-full h-full object-cover"
                               />
@@ -279,8 +287,9 @@ export const HomePage: React.FC<HomePageProps> = ({
                     </a>
                   </div>
                 </article>
-              ))}
-            </div>
+              );
+            })}
+          </div>
           </div>
         </section>
 
