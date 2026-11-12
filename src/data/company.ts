@@ -20,6 +20,8 @@ export const IMAGES = {
   homeDecor3: '/images/home_decor_3.webp',
   majlis1: '/images/majlis_1.webp',
   majlis2: '/images/majlis_2.webp',
+  commercial1: '/images/commercial_1.webp',
+  commercial2: '/images/commercial_2.webp',
   customWardrobe: '/images/custom_wardrobe_main.webp',
   modernBedroom: '/images/modern_bedroom_main.webp',
   commercialBoutique: '/images/interior_commercial_boutique_1794440350349.webp',
