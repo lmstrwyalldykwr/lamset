@@ -222,7 +222,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       ],
     },
     image: IMAGES.commercialBoutique,
-    relatedImages: [IMAGES.commercialBoutique, IMAGES.customWardrobe],
+    relatedImages: [IMAGES.commercialBoutique, IMAGES.architecturalRenovation],
   },
   {
     id: 'public-projects-decoration',
