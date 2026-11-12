@@ -162,6 +162,31 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
 
                 {/* Card Copy */}
                 <div className="p-6 space-y-2.5">
+                  {project.gallery.length > 1 && (
+                    <div className="pb-1 flex items-center gap-2">
+                      {project.gallery.map((imgUrl, idx) => (
+                        <button
+                          key={`${project.id}-proj-thumb-${idx}`}
+                          type="button"
+                          onClick={() =>
+                            onOpenLightbox(
+                              project.gallery,
+                              idx,
+                              project.title[lang]
+                            )
+                          }
+                          className="h-12 w-16 rounded-lg overflow-hidden border border-[#B8A98C]/50 hover:border-[#C9A45C] transition-colors cursor-pointer shrink-0"
+                        >
+                          <img
+                            src={imgUrl}
+                            alt={`${project.title[lang]} ${idx + 1}`}
+                            loading="lazy"
+                            className="w-full h-full object-cover"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  )}
                   <h2 className="text-lg font-bold text-[#071A35] leading-snug">
                     <a
                       href={`/projects/${project.id}`}

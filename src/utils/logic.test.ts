@@ -83,6 +83,14 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
   assert.equal(wardrobes.length > 0, true);
   assert.equal(wardrobes.every((p) => p.category === 'wardrobes'), true);
 
+  const homeDecor = filterProjectsByCategory(PROJECTS_DATA, 'home-decor');
+  assert.equal(homeDecor.length, 1);
+  assert.deepEqual(homeDecor[0].gallery, [
+    '/images/home_decor_1.webp',
+    '/images/home_decor_2.webp',
+    '/images/home_decor_3.webp',
+  ]);
+
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
   assert.equal(allServices.length, 10);
 
