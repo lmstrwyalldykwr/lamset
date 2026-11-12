@@ -143,8 +143,9 @@ test('filterProjectsByCategory and filterServicesByCategory return expected subs
   ]);
 
   const allServices = filterServicesByCategory(SERVICES_DATA, 'all');
-  assert.equal(allServices.length, 10);
+  assert.equal(allServices.length, 9);
   assert.equal(allServices.some((s) => s.id === 'restoration-works'), false);
+  assert.equal(allServices.some((s) => s.id === 'building-decoration'), false);
   assert.equal(allServices.some((s) => s.id === 'gypsum-works' && s.title.ar === 'أعمال الجبس'), true);
 
   const cabinetryServices = filterServicesByCategory(SERVICES_DATA, 'cabinetry');

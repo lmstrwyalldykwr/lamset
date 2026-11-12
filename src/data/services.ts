@@ -21,7 +21,7 @@ export const SERVICE_CATEGORIES: Array<{ id: ServiceCategory; label: BilingualTe
   { id: 'all', label: { ar: 'جميع الخدمات', en: 'All Services' } },
   { id: 'interior', label: { ar: 'التصميم والديكور السكني', en: 'Residential & Interior Design' } },
   { id: 'cabinetry', label: { ar: 'النجارة وخزائن الملابس', en: 'Woodwork & Custom Wardrobes' } },
-  { id: 'renovation', label: { ar: 'التجديد وديكورات المباني', en: 'Renovation & Building Decor' } },
+  { id: 'renovation', label: { ar: 'تجديد وتطوير المنازل', en: 'Home Renovation & Upgrading' } },
   { id: 'commercial', label: { ar: 'المحلات وأعمال الواجهات', en: 'Commercial & Facade Works' } },
 ];
 
@@ -126,41 +126,8 @@ export const SERVICES_DATA: ServiceItem[] = [
     relatedImages: [IMAGES.architecturalRenovation, IMAGES.heroMajlis],
   },
   {
-    id: 'building-decoration',
-    number: '04',
-    category: 'renovation',
-    title: {
-      ar: 'ديكورات المباني',
-      en: 'Building Decoration',
-    },
-    shortDescription: {
-      ar: 'تنفيذ المداخل الرئيسية، البهو، والممرات المشتركة للمباني السكنية والتجارية بفخامة استثنائية.',
-      en: 'Executing grand main entrances, lobbies, and common corridors for residential and commercial buildings.',
-    },
-    fullDescription: {
-      ar: 'تشكل مداخل المباني والبهو الرئيسي الانطباع الأول عن العقار؛ لذا نصمم وننفذ ديكورات مداخل العمائر والفلل والمباني الإدارية باستخدام الرخام، التكسيات المقاومة، والإضاءة الترحيبية الراقية.',
-      en: 'Building entrances and lobbies define the first impression of any property. We design and execute residential and administrative building lobbies using natural stone, durable claddings, and welcoming architectural lighting.',
-    },
-    features: {
-      ar: [
-        'تصميم وتنفيذ مداخل الفلل والعمائر السكنية والتجارية',
-        'تكسيات جدارية للممرات ومناطق الاستقبال والمصاعد',
-        'تشطيبات عالية التحمل تجمع بين المتانة والمظهر الفخم',
-        'حلول إضاءة معمارية تبرز فخامة المبنى',
-      ],
-      en: [
-        'Grand entrance and lobby execution for villas and multi-story buildings',
-        'Elevator surrounds, corridor cladding, and reception finishes',
-        'High-durability materials engineered for heavy daily use',
-        'Architectural lighting schemes that elevate property value',
-      ],
-    },
-    image: IMAGES.commercialBoutique,
-    relatedImages: [IMAGES.commercialBoutique, IMAGES.architecturalRenovation],
-  },
-  {
     id: 'commercial-store-decoration',
-    number: '05',
+    number: '04',
     category: 'commercial',
     title: {
       ar: 'ديكورات المحلات التجارية',
@@ -193,7 +160,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'public-projects-decoration',
-    number: '06',
+    number: '05',
     category: 'commercial',
     title: {
       ar: 'أعمال الواجهات',
@@ -226,7 +193,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'carpentry-and-cabinets',
-    number: '07',
+    number: '06',
     category: 'cabinetry',
     title: {
       ar: 'النجارة والخزائن',
@@ -259,7 +226,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'wardrobe-supply-and-design',
-    number: '08',
+    number: '07',
     category: 'cabinetry',
     title: {
       ar: 'توريد وتصميم خزائن الملابس',
@@ -292,7 +259,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'custom-cabinets-execution',
-    number: '09',
+    number: '08',
     category: 'cabinetry',
     title: {
       ar: 'تنفيذ الخزائن حسب الطلب',
@@ -325,7 +292,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'gypsum-works',
-    number: '10',
+    number: '09',
     category: 'interior',
     title: {
       ar: 'أعمال الجبس',
