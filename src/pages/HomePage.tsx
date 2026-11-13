@@ -66,15 +66,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               src={IMAGES.logoWatermark}
               alt=""
               aria-hidden="true"
-              className="pointer-events-none select-none object-contain w-[300px] sm:w-[420px] lg:w-[480px] max-w-full aspect-square -translate-x-1/2 -translate-y-1/2"
-              style={{
-                position: 'absolute',
-                top: '46%',
-                left: '50%',
-                zIndex: 1,
-                mixBlendMode: 'screen',
-                opacity: 0.14,
-              }}
+              className="absolute top-[46%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1] pointer-events-none select-none mix-blend-screen opacity-[0.14] object-contain w-[300px] sm:w-[420px] lg:w-[480px] max-w-full aspect-square"
             />
 
             <p className="relative z-10 text-xs sm:text-sm font-medium text-[#DCC18A] tracking-wide">
