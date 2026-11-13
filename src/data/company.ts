@@ -64,7 +64,7 @@ export const COMPANY_INFO = {
   email: 'lmshroeyid@gmail.com',
   social: {
     instagram: 'https://www.instagram.com/s33j.s/',
-    snapchat: 'https://t.snapchat.com/G8cDkZoo',
+    snapchat: 'https://snapchat.com/t/zK2EY805',
     tiktok: 'https://www.tiktok.com/@s33j.s',
     googleMaps: 'https://maps.app.goo.gl/cZ1C9Liaefr6EAd36?g_st=ic',
   },
