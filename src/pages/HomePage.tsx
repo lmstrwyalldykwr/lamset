@@ -61,12 +61,12 @@ export const HomePage: React.FC<HomePageProps> = ({
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
           <div className="relative max-w-3xl space-y-6">
-            {/* Logo Watermark behind Hero Texts only (Middle area behind main heading & paragraph) */}
+            {/* Logo Watermark behind Hero Texts only (Centered behind main heading & space above paragraph) */}
             <img
               src={IMAGES.logoWatermark}
               alt=""
               aria-hidden="true"
-              className="absolute top-[41%] left-1/2 -translate-x-1/2 -translate-y-[21%] z-[1] pointer-events-none select-none mix-blend-screen opacity-[0.30] brightness-[1.3] contrast-[1.15] [clip-path:inset(0_0_62%_0)] object-contain w-[416px] sm:w-[598px] lg:w-[702px] max-w-none h-auto"
+              className="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-[21%] z-[1] pointer-events-none select-none mix-blend-screen opacity-[0.22] contrast-[1.45] brightness-[0.95] [clip-path:inset(0_0_62%_0)] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_90%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_90%)] object-contain w-[416px] sm:w-[598px] lg:w-[702px] max-w-none h-auto"
             />
 
             <p className="relative z-10 text-xs sm:text-sm font-medium text-[#DCC18A] tracking-wide">
