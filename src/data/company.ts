@@ -61,7 +61,7 @@ export const COMPANY_INFO = {
   phoneDisplay: '+966 53 182 6166',
   phoneRaw: '+966531826166',
   whatsappNumber: '966531826166',
-  email: 'lmshroeyid@gmail.com',
+  email: 'Ziadalsarori@gmail.com',
   social: {
     instagram: 'https://www.instagram.com/s33j.s/',
     snapchat: 'https://snapchat.com/t/zK2EY805',
