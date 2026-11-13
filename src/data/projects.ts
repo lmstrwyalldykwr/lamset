@@ -206,8 +206,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
     category: 'bedrooms',
     categoryLabel: { ar: 'غرف النوم', en: 'Bedrooms' },
     title: {
-      ar: 'غرف نوم ماستر بخلفية جدارية منجدة وتفاصيل خشبية',
-      en: 'Master Bedroom with Upholstered Geometric Wall Paneling',
+      ar: 'غرف نوم ماستر',
+      en: 'Master Bedrooms',
     },
     subtitle: {
       ar: 'تناغم الألوان الهادئة مع التكسيات المنجدة وخزائن الحائط المدمجة',
