@@ -106,8 +106,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
     category: 'majlis',
     categoryLabel: { ar: 'المجالس', en: 'Majlis' },
     title: {
-      ar: 'تصميم مجلس استقبال فاخر بتكسيات الجوز والذهب المطفي',
-      en: 'Luxury Reception Majlis with Fluted Walnut & Brushed Gold',
+      ar: 'تصميم اثردي مجلس نساء',
+      en: '3D Women’s Majlis Design',
     },
     subtitle: {
       ar: 'نموذج تصميمي يوضح معاييرنا في تنفيذ المجالس الرحبة وتوزيع الإضاءة المخفية',
@@ -206,8 +206,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
     category: 'bedrooms',
     categoryLabel: { ar: 'غرف النوم', en: 'Bedrooms' },
     title: {
-      ar: 'جناح نوم رئيسي بخلفية جدارية منجدة وتفاصيل خشبية',
-      en: 'Master Bedroom Suite with Upholstered Geometric Wall Paneling',
+      ar: 'غرف نوم ماستر بخلفية جدارية منجدة وتفاصيل خشبية',
+      en: 'Master Bedroom with Upholstered Geometric Wall Paneling',
     },
     subtitle: {
       ar: 'تناغم الألوان الهادئة مع التكسيات المنجدة وخزائن الحائط المدمجة',
