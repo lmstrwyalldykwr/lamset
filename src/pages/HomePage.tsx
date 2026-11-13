@@ -225,8 +225,8 @@ export const HomePage: React.FC<HomePageProps> = ({
               const displayTitle =
                 service.id === 'interior-design'
                   ? lang === 'ar'
-                    ? 'غرف النوم'
-                    : 'Bedrooms'
+                    ? 'غرفة الماستر'
+                    : 'Master Room'
                   : service.title[lang];
 
               return (
