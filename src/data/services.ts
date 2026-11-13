@@ -89,8 +89,14 @@ export const SERVICES_DATA: ServiceItem[] = [
         'Direct technical supervision ensuring faithful execution',
       ],
     },
-    image: IMAGES.modernBedroom,
-    relatedImages: [IMAGES.modernBedroom],
+    image: IMAGES.masterRoom1,
+    relatedImages: [
+      IMAGES.masterRoom1,
+      IMAGES.masterRoom2,
+      IMAGES.masterRoom3,
+      IMAGES.masterRoom4,
+      IMAGES.masterRoom5,
+    ],
   },
   {
     id: 'home-renovation-development',
