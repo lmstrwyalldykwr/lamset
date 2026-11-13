@@ -15,6 +15,7 @@ export interface WorkingDay {
 
 export const IMAGES = {
   heroMajlis: '/images/hero_luxury_majlis_1794440345651.webp',
+  logoWatermark: '/images/logo_watermark.webp',
   homeDecor1: '/images/home_decor_1.webp',
   homeDecor2: '/images/home_decor_2.webp',
   homeDecor3: '/images/home_decor_3.webp',

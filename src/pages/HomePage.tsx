@@ -59,21 +59,37 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="absolute inset-0 bg-gradient-to-t from-[#071A35] via-[#071A35]/80 to-[#071A35]/55" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
-          <div className="max-w-3xl space-y-6">
-            <p className="text-xs sm:text-sm font-medium text-[#DCC18A] tracking-wide">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
+          <div className="relative max-w-3xl space-y-6">
+            {/* Logo Watermark behind Hero Texts only (Middle area behind main heading & paragraph) */}
+            <img
+              src={IMAGES.logoWatermark}
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none select-none object-contain w-[300px] sm:w-[420px] lg:w-[480px] max-w-full aspect-square -translate-x-1/2 -translate-y-1/2"
+              style={{
+                position: 'absolute',
+                top: '46%',
+                left: '50%',
+                zIndex: 1,
+                mixBlendMode: 'screen',
+                opacity: 0.14,
+              }}
+            />
+
+            <p className="relative z-10 text-xs sm:text-sm font-medium text-[#DCC18A] tracking-wide">
               {t.hero.kicker}
             </p>
 
-            <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-bold text-[#FFFFFF] leading-[1.2] text-balance">
+            <h1 className="relative z-10 text-3xl sm:text-5xl lg:text-[3.5rem] font-bold text-[#FFFFFF] leading-[1.2] text-balance">
               {t.hero.title}
             </h1>
 
-            <p className="text-base sm:text-lg text-[#F5F1E8]/90 leading-relaxed max-w-2xl">
+            <p className="relative z-10 text-base sm:text-lg text-[#F5F1E8]/90 leading-relaxed max-w-2xl">
               {t.hero.description}
             </p>
 
-            <div className="pt-4 flex flex-wrap items-center gap-4">
+            <div className="relative z-10 pt-4 flex flex-wrap items-center gap-4">
               <a
                 href={heroWhatsappHref}
                 target="_blank"
@@ -96,7 +112,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
 
           {/* Architectural Bottom Credentials Strip */}
-          <div className="mt-14 pt-8 border-t border-[#C9A45C]/25 grid grid-cols-2 md:grid-cols-4 gap-6 text-xs sm:text-sm text-[#F5F1E8]/90">
+          <div className="relative z-10 mt-14 pt-8 border-t border-[#C9A45C]/25 grid grid-cols-2 md:grid-cols-4 gap-6 text-xs sm:text-sm text-[#F5F1E8]/90">
             <div>
               <span className="block text-xl sm:text-2xl font-bold text-[#DCC18A] tabular-nums">
                 15+
